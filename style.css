@@ -1,3 +1,19 @@
+:root {
+    /* Primary */
+    --strong-cyan: 172, 67%, 45%;
+
+    /* Neutral */
+    --very-dark-cyan: 183, 100%, 15%;
+    --dark-grayish-cyan: 186, 14%, 43%;
+    --grayish-cyan: 184, 14%, 56%;
+    --light-grayish-cyan: 185, 41%, 84%;
+    --white: 0, 0%, 100%;
+
+    /* Typography */
+    --font-size: 24px;
+
+}
+
 /* CSS-reset classes*/
 *,
 *:before,
@@ -22,3 +38,5 @@ body {
     display: grid;
     place-items: center;
 }
+
+@media(min-width: 376px) {}

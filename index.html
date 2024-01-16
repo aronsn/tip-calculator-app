@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
   <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+  <main>
+    <form>
+      <div class="input_container">
+        <label for="bill">Bill</label><br />
+        <input type="number" id="input_bill" name="bill" step="0.01" min=0 value="0.00" />
+      </div>
 
-  Bill
+      <div class="tip_container">
+        <h1>Select Tip %</h1>
+        <div class="radio-button">
+          <input id="tip_1" name="tip" type="radio" value="5">
+          <label for="tip_1">5%</label>
+        </div>
+        <div class="radio-button">
+          <input id="tip_2" name="tip" type="radio" value="10">
+          <label for="tip_2">10%</label>
+        </div>
+        <div class="radio-button">
+          <input id="tip_3" name="tip" type="radio" value="15">
+          <label for="tip_3">15%</label>
+        </div>
+        <div class="radio-button">
+          <input id="tip_4" name="tip" type="radio" value="25">
+          <label for="tip_4">25%</label>
+        </div>
+        <div class="radio-button">
+          <input id="tip_5" name="tip" type="radio" value="50">
+          <label for="tip_5">50%</label>
+        </div>
+        <div class="input_container">
+          <label for="percentage"></label>
+          <input type="number" id="percentage" name="people" max=100 min=0 placeholder="Custom" />
+        </div>
+      </div>
+      <div class="input_container">
+        <label for="input_people">Number of People</label><br />
+        <input type="number" id="input_people" name="people" value="0" min=0 />
+      </div>
+    </form>
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <div class="results-container">
+      <div>
+        <p>Tip Amount<br /><span>/ person</span></p>
+        <p>$<span>0.00</span></p>
+      </div>
+      <div>
+        <p>Total Amount<br /><span>/ person</span></p>
+        <p>$<span>0.00</span></p>
+      </div>
 
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <button>Reset</button>
+    </div>
+  </main>
 </body>
+
 </html>

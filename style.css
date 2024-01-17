@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('./fonts/SpaceMono-Bold.ttf') format('truetype'),
+        url('./fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
 :root {
     /* Primary */
     --strong-cyan: 172, 67%, 45%;
@@ -10,7 +16,9 @@
     --white: 0, 0%, 100%;
 
     /* Typography */
-    --font-size: 24px;
+    --fs-form-inputs: 24px;
+    --fw-regular: 400;
+    --fw-bold: 700;
 
 }
 
@@ -33,6 +41,7 @@ svg {
 }
 
 body {
+    font-family: 'Space Mono', sans-serif;
     /* Nice way to center elements in a page */
     min-height: 100vh;
     display: grid;

@@ -20,6 +20,13 @@
     --fw-regular: 400;
     --fw-bold: 700;
 
+    /* Spacing (8 point grid system) */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 48px;
 }
 
 /* CSS-reset classes*/
@@ -42,10 +49,116 @@ svg {
 
 body {
     font-family: 'Space Mono', sans-serif;
-    /* Nice way to center elements in a page */
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
+    background-color: hsl(var(--light-grayish-cyan));
+
 }
 
-@media(min-width: 376px) {}
+img {
+    margin: auto;
+    padding: var(--spacing-xl);
+}
+
+.tip-container {
+    border-radius: 24px 24px 0 0;
+    background-color: hsl(var(--white));
+    padding: var(--spacing-lg);
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Input number field style */
+.input-wrapper {
+    position: relative;
+
+}
+
+svg {
+    position: absolute;
+    top: 60%;
+    /* transform: translateY(-50%); */
+    left: 1rem;
+}
+
+label[for="input_bill"],
+label[for="input_people"] {
+    color: hsl(var(--dark-grayish-cyan));
+    display: inline-block;
+    margin-bottom: var(--spacing-xs);
+}
+
+input[type='number'] {
+    text-align: end;
+    border: none;
+    background-color: hsla(var(--grayish-cyan), 0.09);
+    padding: 4px 16px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: var(--fs-form-inputs);
+    color: hsl(var(--very-dark-cyan))
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.validation {
+    color: hsla(0, 100%, 50%, 0.5);
+}
+
+input[type='number']:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline-color: hsl(var(--strong-cyan));
+}
+
+.tip-selection {
+    display: grid;
+    gap: var(--spacing-sm);
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Radio input style */
+.radio-button input {
+    position: absolute;
+    cursor: pointer;
+    /* opacity: 0;
+    height: 0;
+    width: 0; */
+}
+
+.radio-button label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(var(--very-dark-cyan));
+    color: hsl(var(--white));
+    font-size: var(--fs-form-inputs);
+    font-weight: var(--fw-bold);
+    border-radius: 4px;
+    padding: 8px 0;
+
+}
+
+input[name="people"] {
+    height: 100%;
+}
+
+.tip-selection>.radio-button label,
+.input-wrapper {}
+
+
+@media(min-width: 376px) {
+    .tip-container {
+        min-height: auto;
+    }
+
+    body {
+        /* Nice way to center elements in a page */
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+}

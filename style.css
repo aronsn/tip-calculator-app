@@ -58,6 +58,10 @@ img {
     padding: var(--spacing-xl);
 }
 
+div[data-spacing="container"] {
+    margin-bottom: var(--spacing-lg);
+}
+
 .tip-container {
     border-radius: 24px 24px 0 0;
     background-color: hsl(var(--white));
@@ -67,9 +71,8 @@ img {
 }
 
 /* Input number field style */
-.input-wrapper {
+.input-container {
     position: relative;
-
 }
 
 svg {
@@ -97,6 +100,10 @@ input[type='number'] {
     color: hsl(var(--very-dark-cyan))
 }
 
+input[name="people"] {
+    height: 100%;
+}
+
 .flex {
     display: flex;
     justify-content: space-between;
@@ -114,19 +121,25 @@ input:focus {
     outline-color: hsl(var(--strong-cyan));
 }
 
+.label-selection {
+    margin-bottom: var(--spacing-sm);
+    color: hsl(var(--dark-grayish-cyan));
+}
+
 .tip-selection {
     display: grid;
     gap: var(--spacing-sm);
     grid-template-columns: 1fr 1fr;
+    ;
 }
 
 /* Radio input style */
 .radio-button input {
     position: absolute;
     cursor: pointer;
-    /* opacity: 0;
+    opacity: 0;
     height: 0;
-    width: 0; */
+    width: 0;
 }
 
 .radio-button label {
@@ -142,12 +155,17 @@ input:focus {
 
 }
 
-input[name="people"] {
-    height: 100%;
+.radio-button label:hover {
+    background-color: hsla(var(--strong-cyan), 0.5);
+    color: hsl(var(--very-dark-cyan));
+    transition: ease 0.2s;
 }
 
-.tip-selection>.radio-button label,
-.input-wrapper {}
+.radio-button input:checked~label {
+    background-color: hsl(var(--strong-cyan));
+    color: hsl(var(--very-dark-cyan));
+    transition: ease 0.1s;
+}
 
 
 @media(min-width: 376px) {

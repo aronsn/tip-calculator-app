@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  </style>
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 
@@ -52,7 +58,7 @@
 
           <div class="input-container">
             <label for="percentage"></label>
-            <input type="number" id="percentage" name="people" max=100 min=0 placeholder="Custom" />
+            <input type="number" id="percentage" name="percentage" max=100 min=0 placeholder="Custom" />
           </div>
         </div>
 
@@ -70,14 +76,16 @@
       </form>
 
       <div class="tip-results">
-        <div class="flex">
-          <p class="label-amount">Tip Amount<br /><span>/ person</span></p>
-          <p class="result">$<span>0.00</span></p>
-        </div>
+        <div>
+          <div class="flex">
+            <p class="label-amount">Tip Amount<br /><span>/ person</span></p>
+            <p class="result">$<span>0.00</span></p>
+          </div>
 
-        <div class="flex">
-          <p class="label-amount">Total<br /><span>/ person</span></p>
-          <p class="result">$<span>0.00</span></p>
+          <div class="flex">
+            <p class="label-amount">Total<br /><span>/ person</span></p>
+            <p class="result">$<span>0.00</span></p>
+          </div>
         </div>
 
         <button>Reset</button>

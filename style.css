@@ -15,8 +15,11 @@
     --light-grayish-cyan: 185, 41%, 84%;
     --white: 0, 0%, 100%;
 
+    /* hsl */
+    --hsl-active-state: hsl(172, 67%, 80%);
+
     /* Typography */
-    --fs-form-inputs: 24px;
+    --fs-form-inputs: 1.5rem;
     --fw-regular: 400;
     --fw-bold: 700;
 
@@ -50,7 +53,6 @@ svg {
 body {
     font-family: 'Space Mono', sans-serif;
     background-color: hsl(var(--light-grayish-cyan));
-
 }
 
 img {
@@ -152,13 +154,13 @@ input:focus {
     font-weight: var(--fw-bold);
     border-radius: 4px;
     padding: 8px 0;
-
 }
 
 .radio-button label:hover {
-    background-color: hsla(var(--strong-cyan), 0.5);
+    background-color: var(--hsl-active-state);
     color: hsl(var(--very-dark-cyan));
     transition: ease 0.2s;
+    cursor: pointer;
 }
 
 .radio-button input:checked~label {
@@ -167,6 +169,45 @@ input:focus {
     transition: ease 0.1s;
 }
 
+/* Tip results card */
+.tip-results {
+    background-color: hsl(var(--very-dark-cyan));
+    padding: var(--spacing-md);
+    border-radius: 16px;
+}
+
+.label-amount {
+    color: hsl(var(--white));
+    margin-bottom: var(--spacing-md);
+}
+
+.label-amount span {
+    color: hsla(var(--light-grayish-cyan), 0.5);
+    font-size: 0.8rem;
+}
+
+.result {
+    color: hsl(var(--strong-cyan));
+    font-size: 1.8rem;
+}
+
+button {
+    border: none;
+    width: 100%;
+    color: hsl(var(--very-dark-cyan));
+    background-color: hsl(var(--strong-cyan));
+    /* background-color: hsl(var(--strong-cyan)); */
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: var(--spacing-xs);
+}
+
+button:hover {
+    background-color: var(--hsl-active-state);
+    transition: ease 0.1s;
+    cursor: pointer;
+}
 
 @media(min-width: 376px) {
     .tip-container {

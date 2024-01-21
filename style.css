@@ -109,10 +109,28 @@ input[name="percentage"] {
     justify-content: space-between;
 }
 
-.validation {
+.validation-text {
     color: hsla(0, 100%, 50%, 0.5);
     display: none;
 }
+
+
+input[data-error="active"] {
+    outline: hsla(0, 100%, 50%, 0.5) 2px solid;
+    border-radius: 4px;
+}
+
+input[data-error="active"]:focus {
+    outline-color: hsla(0, 100%, 50%, 0.5) 2px solid;
+    outline: hsla(0, 100%, 50%, 0.5) 2px solid;
+    border-radius: 4px;
+}
+
+input[type='number']:hover {
+    cursor: pointer;
+}
+
+
 
 input[type='number']:hover {
     cursor: pointer;

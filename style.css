@@ -293,5 +293,6 @@ button:active {
     .result {
         font-size: 3rem;
         line-height: 0.7;
+        margin-left: 2rem;
     }
 }

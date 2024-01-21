@@ -59,6 +59,10 @@ document.getElementById('button').addEventListener('click', () => {
 
     const totalElement = document.getElementById('total');
     totalElement.innerHTML = "$0.00";
+
+    bill = 0;
+    percentage = 0;
+    people = 0;
 })
 
 // Displays error styling and validation-text if input is 0, if not

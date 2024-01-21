@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here]([https://your-solution-url.com](https://aronsn.github.io/tip-calculator-app/))
+- Solution URL: [Solution URL here](https://aronsn.github.io/tip-calculator-app/)
 
 ## My process
 

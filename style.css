@@ -140,6 +140,14 @@ input:focus {
     outline-color: hsl(var(--strong-cyan));
 }
 
+input[name="bill"]::placeholder {
+    color: hsla(var(--grayish-cyan), 0.8)
+}
+
+input[name="people"]::placeholder {
+    color: hsla(var(--grayish-cyan), 0.8)
+}
+
 .label-selection {
     margin-bottom: var(--spacing-sm);
     color: hsl(var(--dark-grayish-cyan));

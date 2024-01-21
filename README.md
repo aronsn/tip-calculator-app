@@ -38,10 +38,13 @@ Users should be able to:
 
 ### Screenshot
 
+![mobile](https://github.com/aronsn/tip-calculator-app/assets/54532695/d7513216-2ae7-45d0-b784-efd1d00d55db)
+
+![desktop](https://github.com/aronsn/tip-calculator-app/assets/54532695/b24a2518-fd8a-4055-a8c6-e706a7de03aa)
+
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here]([https://your-solution-url.com](https://aronsn.github.io/tip-calculator-app/))
 
 ## My process
 
@@ -52,9 +55,6 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-
-### What I learned
-
 
 ## Author
 

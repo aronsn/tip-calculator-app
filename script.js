@@ -20,6 +20,7 @@ document.getElementById('percentage').addEventListener('input', (event) => {
             radio.checked = false;
         };
     });
+    displayTip();
 });
 
 // Gets all input radio elements, adds input event listeners with a function 
@@ -30,7 +31,7 @@ Array.from(radioButtons).forEach(button => {
     button.addEventListener('change', (event) => {
         percentage = event.target.value;
         document.getElementById('percentage').value = "";
-
+        displayTip();
     });
 });
 

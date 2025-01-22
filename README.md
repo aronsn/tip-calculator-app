@@ -58,4 +58,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@fuzzboii](https://www.frontendmentor.io/profile/fuzzboii)
+- Frontend Mentor - [@aronsn](https://www.frontendmentor.io/profile/aronsn))
